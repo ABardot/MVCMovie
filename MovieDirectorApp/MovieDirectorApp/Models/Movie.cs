@@ -12,6 +12,7 @@ namespace MovieDirectorApp.Models
         [Display(Name = "Date Released")]
         [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd}")]
         public DateTime ReleaseDate { get; set; }
+        [Display(Name = "User Rating")]
         public int MyProperty { get; set; }
         [Display(Name = "Rotten Tomatoes Score")]
         public int RTScore { get; set; }
