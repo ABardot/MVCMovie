@@ -4,11 +4,15 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Find a Movie</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
+
+
+
 <table class="table">
     <tr>
         <th>
@@ -65,9 +69,18 @@
             @Html.DisplayFor(modelItem => item.WonAward)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MovieID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MovieID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MovieID })
+          
+          
+          
+
+            <ul class="pager">
+                <li><a href="#">Previous</a></li>
+                <li>@Html.ActionLink("Edit", "Edit", new { id = item.MovieID })</li>
+                <li>  @Html.ActionLink("Details", "Details", new { id = item.MovieID })</li>
+                <li>  @Html.ActionLink("Delete", "Delete", new { id = item.MovieID })</li>
+            </ul>
+
+
         </td>
     </tr>
 }

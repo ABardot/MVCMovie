@@ -9,74 +9,82 @@
 <div>
     <h4>Movie</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Director.Name)
-        </dt>
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
 
-        <dd>
-            @Html.DisplayFor(model => model.Director.Name)
-        </dd>
+                <div class="caption">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Director.Name)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Genre.Type)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Director.Name)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Genre.Type)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Genre.Type)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Genre.Type)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Title)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ReleaseDate)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Title)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.ReleaseDate)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.ReleaseDate)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.MyProperty)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.ReleaseDate)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.MyProperty)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.MyProperty)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.RTScore)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.MyProperty)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.RTScore)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.RTScore)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Rating)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.RTScore)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Rating)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Rating)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.WonAward)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Rating)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.WonAward)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.WonAward)
+                        </dt>
 
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.MovieID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+                        <dd>
+                            @Html.DisplayFor(model => model.WonAward)
+                        </dd>
+
+                    </dl>
+                </div>
+                <button type="button" class="btn btn-primary btn-md">@Html.ActionLink("Edit", "Edit", new { id = Model.MovieID })</button>
+                <button type="button" class="btn btn-primary btn-md">@Html.ActionLink("Back to List", "Index")</button>
+            </div>
+
+            </div>
+        </div>
+    </div>

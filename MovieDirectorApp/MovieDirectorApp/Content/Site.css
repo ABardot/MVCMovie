@@ -42,3 +42,26 @@ textarea {
 .navbar-toggle{
     color: #808080 !important;
 }
+
+btn{
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.button{
+    color: #fff;
+   
+}
+
+.caption{
+    background-color: lightgrey;
+}

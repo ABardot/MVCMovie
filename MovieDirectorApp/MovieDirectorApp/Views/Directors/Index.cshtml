@@ -4,12 +4,12 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Search by Directors</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
+<button type="button" class="btn"> @Html.ActionLink("Add a director", "Create")</button>
+   
+
+<table class="table table-striped">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -23,9 +23,14 @@
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.DirectorID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.DirectorID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.DirectorID })
+            <ul class="pager">
+                <li>  @Html.ActionLink("Edit", "Edit", new { id = item.DirectorID })</li>
+                <li>   @Html.ActionLink("Details", "Details", new { id = item.DirectorID })</li>
+                <li>  @Html.ActionLink("Delete", "Delete", new { id = item.DirectorID })</li>
+            </ul>
+          
+          
+          
         </td>
     </tr>
 }
