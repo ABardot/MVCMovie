@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace MovieDirectorApp.Models
 {
@@ -10,6 +7,7 @@ namespace MovieDirectorApp.Models
     {
         [Key]
         public int GenreID { get; set; }
+
         public string Type { get; set; }
 
         // Navigation Prop

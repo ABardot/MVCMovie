@@ -19,7 +19,6 @@ namespace MovieDirectorApp.Models
         [Display(Name = "Award Winner")]
         public bool WonAward { get; set; }
         
-
         // Foreign Keys and Navigation Properties
         [ForeignKey("Director"), Display(Name = "Director")]
         public int DirectorID { get; set; }
@@ -28,6 +27,5 @@ namespace MovieDirectorApp.Models
         [ForeignKey("Genre"), Display(Name = "Genre")]
         public int GenreID { get; set; }
         public virtual Genre Genre { get; set; }
-
     }
 }
