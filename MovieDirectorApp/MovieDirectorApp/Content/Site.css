@@ -65,3 +65,44 @@ a:visited {
 .caption{
     background-color: lightgrey;
 }
+
+.pager a{
+    color: #000;
+   
+}
+
+.pager li a{
+    background-color: powderblue;
+}
+
+
+.example {
+    margin-top: 50px;
+   
+    word-spacing: 20px;
+}
+
+.cards {
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    text-align: center;
+    grid-gap: 30px;
+
+}
+
+    .cards li {
+        background-color: palegreen;
+        border: 1px solid #d0bfff;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px groove;
+        padding: 10px;
+        box-shadow: 8px 8px #888888;
+    }
+
+div.btn-group a {
+    color: #000;
+  
+}

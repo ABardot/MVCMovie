@@ -9,25 +9,27 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Type)
-        </th>
-        <th></th>
-    </tr>
+<div class="example">
+    <ul class="cards">
+        <li>
+            <span class="glyphicons glyphicons-film"></span>
+            <h2>@Html.DisplayNameFor(model => model.Type)</h2>
+        </li>
+        @foreach (var item in Model)
+        {
+        <li>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Type)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.GenreID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.GenreID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.GenreID })
-        </td>
-    </tr>
-}
+           
+            <h2>@Html.DisplayFor(modelItem => item.Type)</h2>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-info">  @Html.ActionLink("Edit", "Edit", new { id = item.GenreID }) </button>
+                <button type="button" class="btn btn-info">  @Html.ActionLink("Details", "Details", new { id = item.GenreID }) </button>
+                <button type="button" class="btn btn-info">  @Html.ActionLink("Delete", "Delete", new { id = item.GenreID }) </button>
+            </div>
 
-</table>
+
+        </li>
+        }
+    </ul>
+</div>
+
